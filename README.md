@@ -1,7 +1,7 @@
 koa-mysql-sample
 ================
 
-安装
+安装<br />
   1.Node版本在v0.11以上
   2.安装依赖模块
     在koa-mysql-sample目录下，执行：
