@@ -5,7 +5,7 @@ app.use(function *(next) {
         yield next;
     } catch (err) {
         this.status = err.status || 500;
-        this.body  = this.status + '\n' + err.message;
+        this.body  = err.message;
         this.app.emit('error', err, this);
     }
 });

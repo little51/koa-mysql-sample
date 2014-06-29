@@ -2,7 +2,7 @@
 
 var session = require('koa-session');
 
-app.keys = ['some secret hurr'];
+app.keys = ['koa-mysql-sample'];
 app.use(session());
 app.use(function *(next){
     //console.log('session:' + this.session)
