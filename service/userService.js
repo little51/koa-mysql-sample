@@ -5,6 +5,18 @@ exports.users = {
   findAll: function *(){
     //执行sql返回结果
     //var rows = yield  dbpool.query('select * from users');
+    /*
+    事务控制写法
+    yield dbpool.query('START TRANSACTION');
+    try {
+      yield  dbpool.query('sql1');
+      yield  dbpool.query('sql2');
+      yield  dbpool.query('sql3');
+      yield dbpool.query('COMMIT');  
+    } catch (err) {
+      yield dbpool.query('ROLLBACK');     
+    }
+    */
     //测试
     var rows =[[{"user_id":1,"name":"test","birthday":"1975-12-07T16:00:00.000Z","sex":"M"}]] ;
     this.body = rows[0] ;
