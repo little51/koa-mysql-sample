@@ -7,7 +7,7 @@ exports.users = {
     //var rows = yield  dbpool.query('select * from users');
     /*
     事务控制写法，不能直接用dbpool，因为每次pool.query时取出来connection不一定是同一个
-    而事务必须保证是同一个connection，目前只能用connection
+    而事务必须保证是同一个connection
     yield connection.query('START TRANSACTION');
     try {
       yield connection.query('sql1');
