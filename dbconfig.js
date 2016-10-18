@@ -1,7 +1,7 @@
 'use strict' ;
 
 var co = require('co')
-var mysql = require('co-mysql');
+var mysql = require('mysql');
 
 global.dbpool = mysql.createPool({
     host : 'localhost',
