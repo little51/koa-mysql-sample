@@ -33,7 +33,7 @@ exports.users = {
      //抛出异常，并返回http status 404
      return this.throw(id + '数据未找到', 404);
    }
-   var user = rows[0][0] ;
+   var user = rows[0] ;
    this.body = user.name;
   }
 };
