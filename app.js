@@ -16,6 +16,7 @@ app.use(cors());
 require("fs").readdirSync("./routes").forEach(function(file) {
     require("./routes/" + file);
 });
+
 //启动监听
 app.listen(3000);
 console.log('listening on port 3000');
